@@ -1,10 +1,6 @@
-﻿
-@{
-    ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/CustomLayout.cshtml";
-}
+<!DOCTYPE html>
+<html lang="en">
 
-<h2>Index</h2>
 <head>
 
     <meta charset="utf-8">
@@ -38,6 +34,7 @@
     <![endif]-->
 
 </head>
+
 <body>
 
     <div id="wrapper">
@@ -251,15 +248,12 @@
                         <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
                     </a>
                     <ul class="dropdown-menu dropdown-user">
-                        <li>
-                            <a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
+                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
                         </li>
-                        <li>
-                            <a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
+                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
                         </li>
                         <li class="divider"></li>
-                        <li>
-                            <a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
                         </li>
                     </ul>
                     <!-- /.dropdown-user -->
@@ -270,24 +264,24 @@
 
             <div class="navbar-default sidebar" role="navigation">
                 <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav in" id="side-menu">
+                    <ul class="nav" id="side-menu">
                         <li class="sidebar-search">
                             <div class="input-group custom-search-form">
                                 <input type="text" class="form-control" placeholder="Search...">
                                 <span class="input-group-btn">
-                                    <button class="btn btn-default" type="button">
-                                        <i class="fa fa-search"></i>
-                                    </button>
-                                </span>
+                                <button class="btn btn-default" type="button">
+                                    <i class="fa fa-search"></i>
+                                </button>
+                            </span>
                             </div>
                             <!-- /input-group -->
                         </li>
                         <li>
-                            <a href="index.html" class="active"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
+                            <a href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
+                            <ul class="nav nav-second-level">
                                 <li>
                                     <a href="flot.html">Flot Charts</a>
                                 </li>
@@ -305,7 +299,7 @@
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
+                            <ul class="nav nav-second-level">
                                 <li>
                                     <a href="panels-wells.html">Panels and Wells</a>
                                 </li>
@@ -329,7 +323,7 @@
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
+                            <ul class="nav nav-second-level">
                                 <li>
                                     <a href="#">Second Level Item</a>
                                 </li>
@@ -338,7 +332,7 @@
                                 </li>
                                 <li>
                                     <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level collapse">
+                                    <ul class="nav nav-third-level">
                                         <li>
                                             <a href="#">Third Level Item</a>
                                         </li>
@@ -359,7 +353,7 @@
                         </li>
                         <li>
                             <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level collapse">
+                            <ul class="nav nav-second-level">
                                 <li>
                                     <a href="blank.html">Blank Page</a>
                                 </li>
@@ -376,7 +370,7 @@
             <!-- /.navbar-static-side -->
         </nav>
 
-        <div id="page-wrapper" style="min-height: 838px;">
+        <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
                     <h1 class="page-header">Dashboard</h1>
@@ -487,18 +481,14 @@
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu pull-right" role="menu">
-                                        <li>
-                                            <a href="#">Action</a>
+                                        <li><a href="#">Action</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Another action</a>
+                                        <li><a href="#">Another action</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Something else here</a>
+                                        <li><a href="#">Something else here</a>
                                         </li>
                                         <li class="divider"></li>
-                                        <li>
-                                            <a href="#">Separated link</a>
+                                        <li><a href="#">Separated link</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -506,20 +496,7 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <div id="morris-area-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);">
-                                <svg height="347" version="1.1" width="649.328125" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="49.515625" y="313" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.015625,313H624.328125" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.515625" y="241" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">7,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.015625,241H624.328125" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.515625" y="169" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">15,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.015625,169H624.328125" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.515625" y="97.00000000000003" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4.000000000000028" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">22,500</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.015625,97.00000000000003H624.328125" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="49.515625" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30,000</tspan></text><path fill="none" stroke="#aaaaaa" d="M62.015625,25H624.328125" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="520.4977524872158" y="325.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="271.09987389878995" y="325.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2011</tspan></text><path fill="#7cb57c" stroke="none" d="M62.015625,261.9952C77.72399024100045,256.7152,109.14072072300138,245.75689404303512,124.84908596400183,240.8752C140.5645687243684,235.9912940430351,171.9955342451015,229.61560628272252,187.71101700546808,222.93280000000001C203.26279682041417,216.31960628272253,234.36635645030628,189.66448883774453,249.91813626525237,187.6912C265.29197809604574,185.74048883774455,296.03966175763253,205.80161428898558,311.4135035884259,207.23680000000002C327.1218688294264,208.70321428898558,358.5385993114272,198.32102124575314,374.2469645524277,199.29760000000002C389.96244731279427,200.27462124575314,421.3934128335274,232.3866890052356,437.108895593894,215.0512C452.66067540884006,197.8962890052356,483.7642350387322,69.70431494621197,499.31601485367827,61.33600000000001C514.8606771492582,52.97151494621197,545.9500017404181,135.84980951947168,561.4946640359981,148.12C577.2030292769986,160.51940951947168,608.6197597589995,157.04080000000002,624.328125,160.01440000000002L624.328125,313L62.015625,313Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#4da74d" d="M62.015625,261.9952C77.72399024100045,256.7152,109.14072072300138,245.75689404303512,124.84908596400183,240.8752C140.5645687243684,235.9912940430351,171.9955342451015,229.61560628272252,187.71101700546808,222.93280000000001C203.26279682041417,216.31960628272253,234.36635645030628,189.66448883774453,249.91813626525237,187.6912C265.29197809604574,185.74048883774455,296.03966175763253,205.80161428898558,311.4135035884259,207.23680000000002C327.1218688294264,208.70321428898558,358.5385993114272,198.32102124575314,374.2469645524277,199.29760000000002C389.96244731279427,200.27462124575314,421.3934128335274,232.3866890052356,437.108895593894,215.0512C452.66067540884006,197.8962890052356,483.7642350387322,69.70431494621197,499.31601485367827,61.33600000000001C514.8606771492582,52.97151494621197,545.9500017404181,135.84980951947168,561.4946640359981,148.12C577.2030292769986,160.51940951947168,608.6197597589995,157.04080000000002,624.328125,160.01440000000002" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="62.015625" cy="261.9952" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.84908596400183" cy="240.8752" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="187.71101700546808" cy="222.93280000000001" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="249.91813626525237" cy="187.6912" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="311.4135035884259" cy="207.23680000000002" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="374.2469645524277" cy="199.29760000000002" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="437.108895593894" cy="215.0512" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="499.31601485367827" cy="61.33600000000001" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="561.4946640359981" cy="148.12" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="624.328125" cy="160.01440000000002" r="2" fill="#4da74d" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#a8b4bd" stroke="none" d="M62.015625,287.4064C77.72399024100045,281.632,109.14072072300138,269.3656543601359,124.84908596400183,264.3088C140.5645687243684,259.24965436013593,171.9955342451015,249.70720000000003,187.71101700546808,246.94240000000002C203.26279682041417,244.20640000000003,234.36635645030628,244.52992497123134,249.91813626525237,242.30560000000003C265.29197809604574,240.10672497123133,296.03966175763253,232.33483379894665,311.4135035884259,229.2496C327.1218688294264,226.09723379894663,358.5385993114272,217.2244296262741,374.2469645524277,217.35520000000002C389.96244731279427,217.4860296262741,421.3934128335274,243.6579937172775,437.108895593894,230.296C452.66067540884006,217.0731937172775,483.7642350387322,118.85619409475855,499.31601485367827,111.01600000000002C514.8606771492582,103.17939409475855,545.9500017404181,159.3581391027101,561.4946640359981,167.58880000000002C577.2030292769986,175.9061391027101,608.6197597589995,174.8032,624.328125,177.208L624.328125,313L62.015625,313Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#7a92a3" d="M62.015625,287.4064C77.72399024100045,281.632,109.14072072300138,269.3656543601359,124.84908596400183,264.3088C140.5645687243684,259.24965436013593,171.9955342451015,249.70720000000003,187.71101700546808,246.94240000000002C203.26279682041417,244.20640000000003,234.36635645030628,244.52992497123134,249.91813626525237,242.30560000000003C265.29197809604574,240.10672497123133,296.03966175763253,232.33483379894665,311.4135035884259,229.2496C327.1218688294264,226.09723379894663,358.5385993114272,217.2244296262741,374.2469645524277,217.35520000000002C389.96244731279427,217.4860296262741,421.3934128335274,243.6579937172775,437.108895593894,230.296C452.66067540884006,217.0731937172775,483.7642350387322,118.85619409475855,499.31601485367827,111.01600000000002C514.8606771492582,103.17939409475855,545.9500017404181,159.3581391027101,561.4946640359981,167.58880000000002C577.2030292769986,175.9061391027101,608.6197597589995,174.8032,624.328125,177.208" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="62.015625" cy="287.4064" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.84908596400183" cy="264.3088" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="187.71101700546808" cy="246.94240000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="249.91813626525237" cy="242.30560000000003" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="311.4135035884259" cy="229.2496" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="374.2469645524277" cy="217.35520000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="437.108895593894" cy="230.296" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="499.31601485367827" cy="111.01600000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="561.4946640359981" cy="167.58880000000002" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="624.328125" cy="177.208" r="2" fill="#7a92a3" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><path fill="#2677b5" stroke="none" d="M62.015625,287.4064C77.72399024100045,287.1376,109.14072072300138,289.0257895356739,124.84908596400183,286.3312C140.5645687243684,283.6353895356739,171.9955342451015,267.03781361256546,187.71101700546808,265.8448C203.26279682041417,264.66421361256545,234.36635645030628,279.12750471806675,249.91813626525237,276.8368C265.29197809604574,274.57230471806673,296.03966175763253,249.8830226700252,311.4135035884259,247.62400000000002C327.1218688294264,245.31582267002523,358.5385993114272,256.1805408833522,374.2469645524277,258.568C389.96244731279427,260.9565408833522,421.3934128335274,278.0706764397906,437.108895593894,266.728C452.66067540884006,255.5034764397906,483.7642350387322,175.34121144426643,499.31601485367827,168.2992C514.8606771492582,161.26041144426645,545.9500017404181,202.47734256433617,561.4946640359981,210.40480000000002C577.2030292769986,218.41574256433617,608.6197597589995,226.6408,624.328125,232.0528L624.328125,313L62.015625,313Z" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></path><path fill="none" stroke="#0b62a4" d="M62.015625,287.4064C77.72399024100045,287.1376,109.14072072300138,289.0257895356739,124.84908596400183,286.3312C140.5645687243684,283.6353895356739,171.9955342451015,267.03781361256546,187.71101700546808,265.8448C203.26279682041417,264.66421361256545,234.36635645030628,279.12750471806675,249.91813626525237,276.8368C265.29197809604574,274.57230471806673,296.03966175763253,249.8830226700252,311.4135035884259,247.62400000000002C327.1218688294264,245.31582267002523,358.5385993114272,256.1805408833522,374.2469645524277,258.568C389.96244731279427,260.9565408833522,421.3934128335274,278.0706764397906,437.108895593894,266.728C452.66067540884006,255.5034764397906,483.7642350387322,175.34121144426643,499.31601485367827,168.2992C514.8606771492582,161.26041144426645,545.9500017404181,202.47734256433617,561.4946640359981,210.40480000000002C577.2030292769986,218.41574256433617,608.6197597589995,226.6408,624.328125,232.0528" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><circle cx="62.015625" cy="287.4064" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="124.84908596400183" cy="286.3312" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="187.71101700546808" cy="265.8448" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="249.91813626525237" cy="276.8368" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="311.4135035884259" cy="247.62400000000002" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="374.2469645524277" cy="258.568" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="437.108895593894" cy="266.728" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="499.31601485367827" cy="168.2992" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="561.4946640359981" cy="210.40480000000002" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle><circle cx="624.328125" cy="232.0528" r="2" fill="#0b62a4" stroke="#ffffff" stroke-width="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></circle></svg><div class="morris-hover morris-default-style" style="left: 537.266px; top: 128px; display: none;">
-                                    <div class="morris-hover-row-label">2012 Q2</div><div class="morris-hover-point" style="color: #0b62a4">
-                                        iPhone:
-                                        8,432
-                                    </div><div class="morris-hover-point" style="color: #7A92A3">
-                                        iPad:
-                                        5,713
-                                    </div><div class="morris-hover-point" style="color: #4da74d">
-                                        iPod Touch:
-                                        1,791
-                                    </div>
-                                </div>
-                            </div>
+                            <div id="morris-area-chart"></div>
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -534,18 +511,14 @@
                                         <span class="caret"></span>
                                     </button>
                                     <ul class="dropdown-menu pull-right" role="menu">
-                                        <li>
-                                            <a href="#">Action</a>
+                                        <li><a href="#">Action</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Another action</a>
+                                        <li><a href="#">Another action</a>
                                         </li>
-                                        <li>
-                                            <a href="#">Something else here</a>
+                                        <li><a href="#">Something else here</a>
                                         </li>
                                         <li class="divider"></li>
-                                        <li>
-                                            <a href="#">Separated link</a>
+                                        <li><a href="#">Separated link</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -621,7 +594,7 @@
                                 </div>
                                 <!-- /.col-lg-4 (nested) -->
                                 <div class="col-lg-8">
-                                    <div id="morris-bar-chart" style="position: relative; -webkit-tap-highlight-color: rgba(0, 0, 0, 0);"><svg height="347" version="1.1" width="422.875" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.765625px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><text x="32.84375" y="313" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">0</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.34375,313H397.875" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="241" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">25</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.34375,241H397.875" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="169" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">50</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.34375,169H397.875" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="97" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">75</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.34375,97H397.875" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="32.84375" y="25" text-anchor="end" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: end; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">100</tspan></text><path fill="none" stroke="#aaaaaa" d="M45.34375,25H397.875" stroke-width="0.5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="372.69419642857144" y="325.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2012</tspan></text><text x="271.9709821428571" y="325.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2010</tspan></text><text x="171.24776785714286" y="325.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2008</tspan></text><text x="70.52455357142857" y="325.5" text-anchor="middle" font-family="sans-serif" font-size="12px" stroke="none" fill="#888888" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: sans-serif; font-size: 12px; font-weight: normal;" font-weight="normal" transform="matrix(1,0,0,1,0,7)"><tspan dy="4" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">2006</tspan></text><rect x="51.63895089285714" y="25" width="17.38560267857143" height="288" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="72.02455357142857" y="53.80000000000001" width="17.38560267857143" height="259.2" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="102.00055803571428" y="97" width="17.38560267857143" height="216" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="122.38616071428571" y="125.80000000000001" width="17.38560267857143" height="187.2" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="152.36216517857142" y="169" width="17.38560267857143" height="144" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="172.74776785714283" y="197.8" width="17.38560267857143" height="115.19999999999999" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="202.72377232142858" y="97" width="17.38560267857143" height="216" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="223.109375" y="125.80000000000001" width="17.38560267857143" height="187.2" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="253.08537946428572" y="169" width="17.38560267857143" height="144" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="273.47098214285717" y="197.8" width="17.38560267857143" height="115.19999999999999" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="303.4469866071429" y="97" width="17.38560267857143" height="216" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="323.83258928571433" y="125.80000000000001" width="17.38560267857143" height="187.2" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="353.80859375000006" y="25" width="17.38560267857143" height="288" rx="0" ry="0" fill="#0b62a4" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect><rect x="374.1941964285715" y="53.80000000000001" width="17.38560267857143" height="259.2" rx="0" ry="0" fill="#7a92a3" stroke="none" fill-opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); fill-opacity: 1;"></rect></svg><div class="morris-hover morris-default-style" style="display: none;"></div></div>
+                                    <div id="morris-bar-chart"></div>
                                 </div>
                                 <!-- /.col-lg-8 (nested) -->
                             </div>
@@ -638,14 +611,12 @@
                         <div class="panel-body">
                             <ul class="timeline">
                                 <li>
-                                    <div class="timeline-badge">
-                                        <i class="fa fa-check"></i>
+                                    <div class="timeline-badge"><i class="fa fa-check"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
                                             <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                            <p>
-                                                <small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
+                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
                                             </p>
                                         </div>
                                         <div class="timeline-body">
@@ -654,8 +625,7 @@
                                     </div>
                                 </li>
                                 <li class="timeline-inverted">
-                                    <div class="timeline-badge warning">
-                                        <i class="fa fa-credit-card"></i>
+                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -668,8 +638,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="timeline-badge danger">
-                                        <i class="fa fa-bomb"></i>
+                                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -691,8 +660,7 @@
                                     </div>
                                 </li>
                                 <li>
-                                    <div class="timeline-badge info">
-                                        <i class="fa fa-save"></i>
+                                    <div class="timeline-badge info"><i class="fa fa-save"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -706,18 +674,14 @@
                                                     <i class="fa fa-gear"></i> <span class="caret"></span>
                                                 </button>
                                                 <ul class="dropdown-menu" role="menu">
-                                                    <li>
-                                                        <a href="#">Action</a>
+                                                    <li><a href="#">Action</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Another action</a>
+                                                    <li><a href="#">Another action</a>
                                                     </li>
-                                                    <li>
-                                                        <a href="#">Something else here</a>
+                                                    <li><a href="#">Something else here</a>
                                                     </li>
                                                     <li class="divider"></li>
-                                                    <li>
-                                                        <a href="#">Separated link</a>
+                                                    <li><a href="#">Separated link</a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -735,8 +699,7 @@
                                     </div>
                                 </li>
                                 <li class="timeline-inverted">
-                                    <div class="timeline-badge success">
-                                        <i class="fa fa-graduation-cap"></i>
+                                    <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
                                     </div>
                                     <div class="timeline-panel">
                                         <div class="timeline-heading">
@@ -764,56 +727,47 @@
                             <div class="list-group">
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small">
-                                        <em>4 minutes ago</em>
+                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small">
-                                        <em>12 minutes ago</em>
+                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small">
-                                        <em>27 minutes ago</em>
+                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small">
-                                        <em>43 minutes ago</em>
+                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small">
-                                        <em>11:32 AM</em>
+                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small">
-                                        <em>11:13 AM</em>
+                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small">
-                                        <em>10:57 AM</em>
+                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small">
-                                        <em>9:49 AM</em>
+                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
                                     </span>
                                 </a>
                                 <a href="#" class="list-group-item">
                                     <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small">
-                                        <em>Yesterday</em>
+                                    <span class="pull-right text-muted small"><em>Yesterday</em>
                                     </span>
                                 </a>
                             </div>
@@ -828,7 +782,7 @@
                             <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
                         </div>
                         <div class="panel-body">
-                            <div id="morris-donut-chart"><svg height="347" version="1.1" width="293.65625" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="overflow: hidden; position: relative; left: -0.328125px;"><desc style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">Created with Raphaël 2.2.0</desc><defs style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></defs><path fill="none" stroke="#0b62a4" d="M146.828125,267.21875A91.21875,91.21875,0,0,0,233.07245503470085,205.71154469946146" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#0b62a4" stroke="#ffffff" d="M146.828125,270.21875A94.21875,94.21875,0,0,0,235.90885643358104,206.68869724867292L271.46728438725097,218.93872946717306A131.828125,131.828125,0,0,1,146.828125,307.828125Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#3980b5" d="M233.07245503470085,205.71154469946146A91.21875,91.21875,0,0,0,65.0112584634356,135.66563869725334" stroke-width="2" opacity="1" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 1;"></path><path fill="#3980b5" stroke="#ffffff" d="M235.90885643358104,206.68869724867292A94.21875,94.21875,0,0,0,62.32046737487438,134.33912321761522L24.102825195153386,115.49845804588003A136.828125,136.828125,0,0,1,276.1946200520513,220.56731704919218Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><path fill="none" stroke="#679dc6" d="M65.0112584634356,135.66563869725334A91.21875,91.21875,0,0,0,146.79946778498436,267.21874549853516" stroke-width="2" opacity="0" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); opacity: 0;"></path><path fill="#679dc6" stroke="#ffffff" d="M62.32046737487438,134.33912321761522A94.21875,94.21875,0,0,0,146.7985253072038,270.2187453504911L146.7867099737775,307.8281184945429A131.828125,131.828125,0,0,1,28.587477009422074,117.70931717861023Z" stroke-width="3" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);"></path><text x="146.828125" y="166" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="15px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 15px; font-weight: 800;" font-weight="800" transform="matrix(1.4249,0,0,1.4249,-62.3792,-75.2016)" stroke-width="0.7018194967835255"><tspan dy="6" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">In-Store Sales</tspan></text><text x="146.828125" y="186" text-anchor="middle" font-family="&quot;Arial&quot;" font-size="14px" stroke="none" fill="#000000" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0); text-anchor: middle; font-family: Arial; font-size: 14px;" transform="matrix(1.9004,0,0,1.9004,-132.2871,-160.2695)" stroke-width="0.526207605344296"><tspan dy="5" style="-webkit-tap-highlight-color: rgba(0, 0, 0, 0);">30</tspan></text></svg></div>
+                            <div id="morris-donut-chart"></div>
                             <a href="#" class="btn btn-default btn-block">View Details</a>
                         </div>
                         <!-- /.panel-body -->
@@ -876,7 +830,7 @@
                             <ul class="chat">
                                 <li class="left clearfix">
                                     <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
                                     </span>
                                     <div class="chat-body clearfix">
                                         <div class="header">
@@ -892,13 +846,12 @@
                                 </li>
                                 <li class="right clearfix">
                                     <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
                                     </span>
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago
-                                            </small>
+                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
                                             <strong class="pull-right primary-font">Bhaumik Patel</strong>
                                         </div>
                                         <p>
@@ -908,14 +861,13 @@
                                 </li>
                                 <li class="left clearfix">
                                     <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
                                     </span>
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <strong class="primary-font">Jack Sparrow</strong>
                                             <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago
-                                            </small>
+                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
                                         </div>
                                         <p>
                                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
@@ -924,13 +876,12 @@
                                 </li>
                                 <li class="right clearfix">
                                     <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle">
+                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
                                     </span>
                                     <div class="chat-body clearfix">
                                         <div class="header">
                                             <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago
-                                            </small>
+                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
                                             <strong class="pull-right primary-font">Bhaumik Patel</strong>
                                         </div>
                                         <p>
@@ -943,7 +894,7 @@
                         <!-- /.panel-body -->
                         <div class="panel-footer">
                             <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here...">
+                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
                                 <span class="input-group-btn">
                                     <button class="btn btn-warning btn-sm" id="btn-chat">
                                         Send
@@ -963,6 +914,7 @@
 
     </div>
     <!-- /#wrapper -->
+
     <!-- jQuery -->
     <script src="../vendor/jquery/jquery.min.js"></script>
 
@@ -980,7 +932,6 @@
     <!-- Custom Theme JavaScript -->
     <script src="../dist/js/sb-admin-2.js"></script>
 
-
-
-
 </body>
+
+</html>
